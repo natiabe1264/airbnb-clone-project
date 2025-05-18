@@ -120,6 +120,42 @@ Provides clear, standardized documentation for all REST and GraphQL API endpoint
 ### ⚙️ Data Optimization
 Implements indexing and caching strategies to enhance performance and reduce server load. This ensures smooth and efficient data retrieval across the application.
 
+## 🔒 API Security
+
+Securing backend APIs is essential for maintaining the integrity, privacy, and reliability of the Airbnb Clone platform. The following measures will be implemented to safeguard sensitive data and prevent unauthorized access.
+
+### 🔐 Authentication
+- **Purpose**: Ensures only registered users can access protected endpoints.
+- **Implementation**: Token-based authentication (e.g., JWT) will be used to validate user identity.
+- **Importance**: Prevents unauthorized users from accessing or manipulating data like bookings or payments.
+
+### 🎯 Authorization
+- **Purpose**: Controls what authenticated users are allowed to do based on their roles (e.g., guest vs. host).
+- **Implementation**: Role-based access control (RBAC) to limit access to resources like property creation or booking management.
+- **Importance**: Ensures that users can only perform actions permitted by their role, protecting against privilege escalation.
+
+### 🚦 Rate Limiting
+- **Purpose**: Restricts the number of requests a user or IP can make within a certain time period.
+- **Implementation**: Use of middleware like `django-ratelimit` or API gateway configurations.
+- **Importance**: Prevents abuse, brute-force attacks, and reduces server overload.
+
+### 🔍 Input Validation & Sanitization
+- **Purpose**: Protects against common attacks like SQL injection and XSS.
+- **Implementation**: Use of serializers and validators in Django REST Framework, along with escaping special characters.
+- **Importance**: Prevents malicious users from injecting harmful code or corrupting data.
+
+### 📊 Secure Data Transmission
+- **Purpose**: Ensures all data sent between client and server is encrypted.
+- **Implementation**: Enforcing HTTPS across the platform.
+- **Importance**: Protects user credentials, payment data, and other sensitive information from being intercepted.
+
+### 💼 Secure Payment Handling
+- **Purpose**: Safeguards financial transactions between guests and hosts.
+- **Implementation**: Integration with trusted third-party payment processors with secure APIs and compliance (e.g., PCI-DSS).
+- **Importance**: Prevents fraud and ensures trust in the platform.
+
+By implementing these security practices, we aim to build a resilient and trustworthy backend system for both hosts and guests.
+
 ---
 
 ## 🔍 Key Features
