@@ -8,15 +8,24 @@ This project is a backend-focused clone of Airbnb, designed as part of the **Pro
 
 The goal of this project is to develop a full-featured backend system that supports core functionalities of a booking platform, including user management, property listings, availability tracking, secure API endpoints, and automated deployment pipelines. It also aims to foster collaboration through version control, documentation, and team role clarity.
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
 
-- **Backend Framework:** Django
-- **Database:** MySQL
-- **API Technologies:** REST, GraphQL
-- **Containerization & Deployment:** Docker, GitHub Actions
-- **Version Control:** Git & GitHub
-- **CI/CD:** GitHub Actions 
-- **Documentation:** Markdown, Swagger/OpenAPI 
+This project uses a combination of modern backend technologies to simulate a real-world booking platform like Airbnb. Below is an overview of each tool and its role in the system:
+
+- **Django**: A powerful Python-based web framework used to build the core backend logic, define models, and implement RESTful APIs.
+
+- **MySQL**: A relational database management system used to store and manage structured data, including users, listings, bookings, and transactions.
+
+- **GraphQL**: An API query language that enables precise and efficient data fetching, giving clients control over the structure and size of the responses.
+
+- **Docker**: A containerization tool that packages the application and its dependencies into isolated environments, making it easy to run consistently across different systems.
+
+- **Git & GitHub**: Tools for version control and collaboration, allowing the team to manage source code, track changes, and coordinate development workflows.
+
+- **GitHub Actions**: A CI/CD automation tool used to build, test, and deploy the application, ensuring smooth and consistent integration and delivery.
+
+- **Markdown**: A markup language used to format documentation like the `README.md` file, making it clear and readable for developers and contributors.
+
 
 ---
 
