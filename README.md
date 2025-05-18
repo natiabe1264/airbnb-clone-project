@@ -24,8 +24,6 @@ Handles deployment infrastructure, including Docker and CI/CD pipelines. Ensures
 ### 🧪 QA Engineer
 Tests the backend features and APIs to ensure they meet functional and performance requirements. Writes test cases, runs integration tests, and reports bugs. Validates user flows such as booking, payments, and authentication.
 
-### 📜 Technical Writer (optional)
-Prepares and maintains documentation for APIs (OpenAPI/Swagger), database schemas, and system setup. Helps ensure the team and external developers understand how to work with the backend effectively.
 
 
 ## 🛠️ Technology Stack
