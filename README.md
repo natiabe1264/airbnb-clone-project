@@ -15,8 +15,8 @@ The goal of this project is to develop a full-featured backend system that suppo
 - **API Technologies:** REST, GraphQL
 - **Containerization & Deployment:** Docker, GitHub Actions
 - **Version Control:** Git & GitHub
-- **CI/CD:** GitHub Actions (or similar)
-- **Documentation:** Markdown, Swagger/OpenAPI (if applicable)
+- **CI/CD:** GitHub Actions 
+- **Documentation:** Markdown, Swagger/OpenAPI 
 
 ---
 
