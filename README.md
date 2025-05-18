@@ -44,6 +44,57 @@ This project uses a combination of modern backend technologies to simulate a rea
 
 - **Markdown**: A markup language used to format documentation like the `README.md` file, making it clear and readable for developers and contributors.
 
+## 🗃️ Database Design
+
+The Airbnb Clone backend relies on a well-structured relational database to support essential features such as user management, property listings, bookings, payments, and reviews. Below is an overview of the core entities and their relationships.
+
+### 🧑 Users
+Stores information about guests and hosts.
+- `id`: Primary key
+- `name`: Full name of the user
+- `email`: Unique email for authentication
+- `password_hash`: Encrypted password
+- `is_host`: Boolean flag to distinguish between guests and hosts
+
+### 🏡 Properties
+Represents accommodations listed by hosts.
+- `id`: Primary key
+- `title`: Name or title of the property
+- `description`: Property details
+- `location`: Address or geolocation
+- `owner_id`: Foreign key to `Users`
+
+### 📅 Bookings
+Tracks reservation information for properties.
+- `id`: Primary key
+- `user_id`: Foreign key to `Users` (the guest)
+- `property_id`: Foreign key to `Properties`
+- `start_date`: Check-in date
+- `end_date`: Check-out date
+
+### 💵 Payments
+Handles payment transactions for bookings.
+- `id`: Primary key
+- `booking_id`: Foreign key to `Bookings`
+- `amount`: Total payment amount
+- `payment_status`: Enum or string (e.g., pending, completed, failed)
+- `payment_date`: Timestamp of transaction
+
+### 🌟 Reviews
+Allows users to rate and review properties.
+- `id`: Primary key
+- `user_id`: Foreign key to `Users`
+- `property_id`: Foreign key to `Properties`
+- `rating`: Integer or decimal score
+- `comment`: Text review
+
+### 🔗 Entity Relationships
+- A **user** can be both a **host** (owning properties) and a **guest** (making bookings).
+- A **property** belongs to one **user** (host) but can have many **bookings** and **reviews**.
+- A **booking** is made by a **user** for a **property**.
+- A **payment** is linked to a **booking**.
+- A **review** is written by a **user** for a **property**.
+
 
 ---
 
