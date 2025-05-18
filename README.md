@@ -8,6 +8,26 @@ This project is a backend-focused clone of Airbnb, designed as part of the **Pro
 
 The goal of this project is to develop a full-featured backend system that supports core functionalities of a booking platform, including user management, property listings, availability tracking, secure API endpoints, and automated deployment pipelines. It also aims to foster collaboration through version control, documentation, and team role clarity.
 
+## 👥 Team Roles
+
+The development of the Airbnb Clone backend involves a collaborative effort from various technical roles, each contributing to a key part of the system's success.
+
+### 🔧 Backend Developer
+Responsible for building the core application logic and RESTful/GraphQL APIs. Implements features such as user authentication, property management, bookings, and reviews. Ensures code quality, scalability, and security best practices are followed.
+
+### 🗄️ Database Administrator (DBA)
+Designs and manages the PostgreSQL database schema. Optimizes data storage, indexing, and query performance. Works closely with backend developers to ensure data integrity and efficient data access.
+
+### ⚙️ DevOps Engineer
+Handles deployment infrastructure, including Docker and CI/CD pipelines. Ensures the backend runs reliably in development and production environments. Sets up monitoring, logging, and automated testing workflows using tools like GitHub Actions.
+
+### 🧪 QA Engineer
+Tests the backend features and APIs to ensure they meet functional and performance requirements. Writes test cases, runs integration tests, and reports bugs. Validates user flows such as booking, payments, and authentication.
+
+### 📜 Technical Writer (optional)
+Prepares and maintains documentation for APIs (OpenAPI/Swagger), database schemas, and system setup. Helps ensure the team and external developers understand how to work with the backend effectively.
+
+
 ## 🛠️ Technology Stack
 
 This project uses a combination of modern backend technologies to simulate a real-world booking platform like Airbnb. Below is an overview of each tool and its role in the system:
