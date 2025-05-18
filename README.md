@@ -156,6 +156,28 @@ Securing backend APIs is essential for maintaining the integrity, privacy, and r
 
 By implementing these security practices, we aim to build a resilient and trustworthy backend system for both hosts and guests.
 
+## CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines are automated workflows that help streamline the software development process. 
+
+**Continuous Integration (CI)** involves automatically building and testing the code every time changes are pushed to the repository. This helps catch bugs early, ensures code quality, and integrates changes frequently.
+
+**Continuous Deployment (CD)** automates the release of the tested code to production or staging environments, making the deployment process faster, reliable, and less prone to human errors.
+
+For this Airbnb Clone project, implementing a CI/CD pipeline ensures that:
+
+- Code is automatically tested for bugs before merging.
+- The backend API is deployed consistently in a reliable environment.
+- Updates can be released frequently without manual intervention.
+
+Common tools used to build CI/CD pipelines include:
+
+- **GitHub Actions**: Automates workflows directly in GitHub repositories.
+- **Docker**: Packages the application in containers for consistent deployment across environments.
+- **CI/CD platforms** like Jenkins, CircleCI, or GitLab CI can also be used depending on the project needs.
+
+By leveraging these tools, the development process becomes more efficient, and the risk of breaking changes in production is minimized.
+
 ---
 
 ## 🔍 Key Features
